@@ -2,6 +2,8 @@
     text-align: center;
     padding: 5px;
     background-color: #cccccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 .paginate .button {
     display: inline-block;
@@ -11,17 +13,13 @@
     background-color: #f1f0f0;
     padding: 5px;
     color: #333333;
-    border: 1px solid #808080;
     margin: 3px;
-
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
 }
-.paginate .button:hover {
-    background-color: #cccccc;
-}
-.paginate .current-button {
-    background-color: #f0f8ff;
+.paginate .current-button, .paginate .button:hover {
+    background-color: #666666;
+    color: #ffffff;
 }
 .paginate .disabled-button {
     background-color: #ebecec;

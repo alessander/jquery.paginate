@@ -45,11 +45,11 @@
             disabledClass: 'disabled-button', // class for disabled prev or next button
             currentClass: 'current-button', // class for active page
             firstPage: 1, // don't change this
-			onNext: function() {}, // called on next button click (use false for stop action)
-			onPrev: function() {}, // called on prev button click (use false for stop action)
-			onClick: function() {}, // called on any page click (use false for stop action)
-			onChange: function() {}, // called on any page change (use false for stop action)
-			onInit: function() {} // called on init (use false for stop action)
+			onNext: function() {}, // called on next button click (return false for stop)
+			onPrev: function() {}, // called on prev button click (return false for stop)
+			onClick: function() {}, // called on any page click (return false for stop)
+			onChange: function() {}, // called on any page change (return false for stop)
+			onInit: function() {} // called on init (return false for stop)
        }
     };
 
