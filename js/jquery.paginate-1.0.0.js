@@ -37,6 +37,7 @@
 			perPage: 10, // how many entries per page are shown
             jumpButtons: 1, // how many quick jump button on beginning or end (use false for disable)
             jumpButtonSpacer: ' ... ', // spacer between jump and page buttons
+            invokerClass: 'paginate', // class for the invoker
             jumpButton: '<a href="#" class="button"></a>',
             prevButton: '<a href="#" class="button">«</a>', // use false for disable
             pageButton: '<a href="#" class="button"></a>',
@@ -56,7 +57,7 @@
 		options = $.extend({}, $.paginate.defaults, options);
 
 		this.each(function() {
-			$(this).empty();
+			$(this).empty().addClass(options.invokerClass);
 
 			options.target = this;
 			options.lastPage = Math.ceil(options.count / options.perPage);
